@@ -8,7 +8,7 @@ require("dotenv").config();
 exports.register = async(req, res) =>{
     try
     {
-        const { name, email, password, role } = req.body;
+        const { email, password, role } = req.body;
         // check for Existing User or Not
         const existingUser = await User.findOne( { email } );
 
@@ -61,7 +61,7 @@ exports.login = async(req, res) =>{
         // validation
         if(!email || !password)
         {
-            return req.status(400).json(
+            return res.status(400).json(
             {
                 success:false,
                 message:'Please fill all the fields'
