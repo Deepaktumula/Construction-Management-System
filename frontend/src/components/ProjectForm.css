@@ -1,0 +1,44 @@
+
+.project-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Style for form elements */
+.project-form-container form div {
+  margin-bottom: 20px;
+}
+
+.project-form-container label {
+  display: block;
+  font-weight: bold;
+}
+
+.project-form-container input[type="text"],
+.project-form-container textarea,
+.project-form-container input[type="file"] { /* Include input[type="file"] */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.project-form-container button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.project-form-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
