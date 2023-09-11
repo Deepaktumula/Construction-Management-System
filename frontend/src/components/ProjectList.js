@@ -38,25 +38,7 @@ const ProjectList = () => {
   const handleEditClose = () => {
     setEditProjectId(null);
   };
-
-  const handleDeleteClick = async (projectId) => {
-    try {
-      alert("This project will get Deleted");
-      const response = await fetch(`http://localhost:4000/api/projects/${projectId}`, {
-        method: 'DELETE',
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to delete project');
-      }
-
-      // Remove the deleted project from the local state
-      setProjects((prevProjects) => prevProjects.filter((project) => project._id !== projectId));
-    } catch (error) {
-      console.error('Error deleting project:', error);
-    }
-  };
-
+  
   return (
     <div className="project-list-container">
       <h2>Project List</h2>
@@ -68,7 +50,6 @@ const ProjectList = () => {
             <p>Price: ${project.price}</p>
             <img src={project.imageUrl} alt={project.name} />
             <button onClick={() => handleEditNavigation(project._id)}>Edit</button>
-            <button onClick={() => handleDeleteClick(project._id)}>Delete</button>
           </li>
         ))}
       </ul>
