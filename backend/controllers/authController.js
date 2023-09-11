@@ -34,7 +34,7 @@ exports.register = async(req, res) =>{
         }
 
         // create the entry for user in database
-        const updateUser = await User.create({ name, email, password:hashedPassword, role });
+        const updateUser = await User.create({ email, password:hashedPassword, role });
 
         return res.status(200).json({
             success:true,
