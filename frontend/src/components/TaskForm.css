@@ -19,7 +19,7 @@
 
 .task-form-container input[type="text"],
 .task-form-container input[type="date"],
-.task-form-container select, /* Add select styling */
+.task-form-container select,
 .task-form-container textarea {
   width: 100%;
   padding: 10px;
