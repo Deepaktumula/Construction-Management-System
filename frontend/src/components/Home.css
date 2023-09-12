@@ -33,20 +33,20 @@
 
 /* Style for each project card */
 .project-card {
-  background-color: #ffffff; /* Change the background color here */
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
-  width: calc(33.33% - 20px); /* Adjust as needed for the desired card width */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow with hover effect */
+  width: calc(33.33% - 20px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
-  transition: box-shadow 0.3s ease; /* Smooth transition for the box shadow */
+  transition: box-shadow 0.3s ease;
 }
 
 /* Hover effect */
 .project-card:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased box shadow on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Style for project title */
